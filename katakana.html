@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/hiragana.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Katakana</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <ul>
+                <li><a href="hiragana.html">Hiragana</a></li>
+                <li><a href="katakana.html" class="active">Katakana</a></li>
+                <li><a href="kanji.html">Kanji</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>&nbsp;&nbsp;KATAKANA SCRIPT</h3>
+        <div class="content">
+            <br>
+            <b>Katakana (カタカナ) </b>-  Hard script, is one component of Japanese Writing System.
+            <br>
+            <br>
+            <p>Katakana is used to transcript foreign-language words into Japanese, writing loans word, emphasize, and so on...
+            Katakana is similar to Hiragana in some way. It will be easier for you to study this kana after "mastered" Hiragana.</p>
+            <br>
+            <br>
+            <p>Click each letter below to see how to write and pronounce: </p>
+            <br>
+            <br>
+            <div class="table_container">
+                <table>
+                    <tr>
+                        <th>　</th>
+                        <th>a</th>
+                        <th>i</th>
+                        <th>u</th>
+                        <th>e</th>
+                        <th>o</th>
+                    </tr>
+                    <tr>
+                        <th>　</th>
+                        <td onclick="displayGif('a')">ア</td>
+                        <td onclick="displayGif('i')">イ</td>
+                        <td onclick="displayGif('u')">ウ</td>
+                        <td onclick="displayGif('e')">エ</td>
+                        <td onclick="displayGif('o')">オ</td>
+                    </tr>
+                    <tr>
+                        <th>k</th>
+                        <td onclick="displayGif('ka')">カ</td>
+                        <td onclick="displayGif('ki')">キ</td>
+                        <td onclick="displayGif('ku')">ク</td>
+                        <td onclick="displayGif('ke')">ケ</td>
+                        <td onclick="displayGif('ko')">コ</td>
+                    </tr>
+                    <tr>
+                        <th>s</th>
+                        <td onclick="displayGif('sa')">サ</td>
+                        <td onclick="displayGif('shi')">シ</td>
+                        <td onclick="displayGif('su')">ス</td>
+                        <td onclick="displayGif('se')">セ</td>
+                        <td onclick="displayGif('so')">ソ</td>
+                    </tr>
+                    <tr>
+                        <th>t</th>
+                        <td onclick="displayGif('ta')">タ</td>
+                        <td onclick="displayGif('chi')">チ</td>
+                        <td onclick="displayGif('tsu')">ツ</td>
+                        <td onclick="displayGif('te')">テ</td>
+                        <td onclick="displayGif('to')">ト</td>
+                    </tr>
+                    <tr>
+                        <th>n</th>
+                        <td onclick="displayGif('na')">ナ</td>
+                        <td onclick="displayGif('ni')">ニ</td>
+                        <td onclick="displayGif('nu')">ヌ</td>
+                        <td onclick="displayGif('ne')">ネ</td>
+                        <td onclick="displayGif('no')">ノ</td>
+                    </tr>
+                    <tr>
+                        <th>h</th>
+                        <td onclick="displayGif('ha')">ハ</td>
+                        <td onclick="displayGif('hi')">ヒ</td>
+                        <td onclick="displayGif('fu')">フ</td>
+                        <td onclick="displayGif('he')">ヘ</td>
+                        <td onclick="displayGif('ho')">ホ</td>
+                    </tr>
+                    <tr>
+                        <th>m</th>
+                        <td onclick="displayGif('ma')">マ</td>
+                        <td onclick="displayGif('mi')">ミ</td>
+                        <td onclick="displayGif('mu')">ム</td>
+                        <td onclick="displayGif('me')">メ</td>
+                        <td onclick="displayGif('mo')">モ</td>
+                    </tr>
+                    <tr>
+                        <th>y</th>
+                        <td onclick="displayGif('ya')">ヤ</td>
+                        <td>　</td>
+                        <td onclick="displayGif('yu')">ユ</td>
+                        <td>　</td>
+                        <td onclick="displayGif('yo')">ヨ</td>
+                    </tr>
+                    <tr>
+                        <th>r</th>
+                        <td onclick="displayGif('ra')">ラ</td>
+                        <td onclick="displayGif('ri')">リ</td>
+                        <td onclick="displayGif('ru')">ル</td>
+                        <td onclick="displayGif('re')">レ</td>
+                        <td onclick="displayGif('ro')">ロ</td>
+                    </tr>
+                    <tr>
+                        <th>w</th>
+                        <td onclick="displayGif('wa')">ワ</td>
+                        <td>　</td>
+                        <td>　</td>
+                        <td>　</td>
+                        <td onclick="displayGif('wo')">ヲ</td>
+                    </tr>
+                    <tr>
+                        <th>n</th>
+                        <td>　</td>
+                        <td>　</td>
+                        <td onclick="displayGif('n')">ン</td>
+                        <td>　</td>
+                        <td>　</td>
+                    </tr>
+                </table>
+                <br>
+                <div id="hiragif" width="100%">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div class="title"><br>Contact me</div>
+            <div class="link">
+                <a class="ytb" href="https://www.youtube.com/channel/UCj26KQ1S9CU0b6BYSCdrQIQ" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a class="fb" href="https://www.facebook.com/bpcorn13401" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="gg" href="https://www.google.com" target="_blank"><i class="fa fa-google"></i></a>
+            </div>
+        </div>
+        <div class="resource">
+            <div class="title"><br>Document resource</div>
+            <div class="link">
+                <a href="https://en.wikipedia.org/wiki/Japanese_writing_system" target="_blank"><i class="fa fa-wikipedia-w"></i></a>
+                <a href="https://commons.wikimedia.org/wiki/Category:Hiragana_stroke_order_(animated_image_set)" target="_blank"><i class="fa fa-wikipedia-w"></i></a>
+                <a href="https://commons.wikimedia.org/wiki/Category:Katakana_stroke_order_(animated_image_set)" target="_blank"><i class="fa fa-wikipedia-w"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/katakana.js"></script>
+</body>
+</html>
